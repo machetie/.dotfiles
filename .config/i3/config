@@ -640,7 +640,8 @@ for_window [class="^Gpick$"] floating enable
 for_window [class="Hexchat"] floating disable
 for_window [class="Imagewriter"] floating enable
 for_window [class="Font-manager"] floating enable
-
+#kicad
+for_window [class="Kicad"] floating enable
 # Bitwarden
 for_window [class="^Bitwarden"] floating enable
 
