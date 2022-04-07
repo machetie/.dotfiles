@@ -1,0 +1,3 @@
+function tolightdm --wraps=sudo\ pacman\ -S\ lightdm\ lightdm-gtk-greeter\ lightdm-gtk-greeter-settings\ --noconfirm\ --needed\ \;\ sudo\ systemctl\ enable\ lightdm.service\ -f\ \;\ echo\ \'Lightm\ is\ active\ -\ reboot\ now\' --description alias\ tolightdm\ sudo\ pacman\ -S\ lightdm\ lightdm-gtk-greeter\ lightdm-gtk-greeter-settings\ --noconfirm\ --needed\ \;\ sudo\ systemctl\ enable\ lightdm.service\ -f\ \;\ echo\ \'Lightm\ is\ active\ -\ reboot\ now\'
+  sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now' $argv; 
+end
