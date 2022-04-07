@@ -1,0 +1,105 @@
+/* #header {
+    display: none;
+        } */
+        #main {
+            position: unset;
+          }
+          /*
+          #titlebar > button.vivaldi {
+          
+          top: 2px;
+          
+          }
+          */
+          /* Omnibox drop-down translucency */
+          .OmniDropdown
+          {
+              background: var(--colorBgAlpha);
+              backdrop-filter: blur(10px);
+          }
+          
+          /* Quick command menu translucency */
+          #modal-bg
+          {
+              background-color: var(--colorBgAlpha);
+              backdrop-filter: blur(10px);
+          }
+          
+          /* Sets the background color to any non-selected 
+           * element of the quick command menu to transparent */
+          #modal-bg *:not([data-selected])
+          {
+              background-color: rgba(0,0,0,0)!important;
+          }
+          
+          #tabs-tabbar-container.top,
+          #tabs-container.top {
+            padding: 2px !important;
+          }
+          
+          .toolbar-mainbar {
+            background: transparent;
+          }
+          
+          
+          
+          .toolbar-mainbar > .button-toolbar > button {
+          
+          height: 32px;
+          
+          }
+          
+          button.vivaldi,
+          
+          .toggle-trash {
+          
+          display: none !important;
+          
+          }
+          
+          
+          
+          .UrlBar {
+            position: absolute;
+            top: 3px;
+            /* address bar width also change .resize to this number */
+          }
+          
+          .resize {
+            left: 670px;
+          }
+          
+          #tabs-container .resize {
+            /* change to width of your extension */
+          
+            max-width: calc(100vw - 685px - 210px);
+          
+            height: 30px !important;
+          }
+          
+          .win.normal .toolbar-mainbar {
+            left: unset;
+          }
+          
+          .toolbar.toolbar-mainbar.toolbar-extensions.toolbar-large {
+            position: relative;
+          
+            background-color: transparent !important;
+          
+            right: 0px;
+          
+            top: 2;
+          }
+          
+          .address-top .toolbar-mainbar:after {
+            background: transparent;
+          }
+          
+          .toolbar.toolbar-tabbar.sync-and-trash-container {
+            position: fixed;
+          
+            top: 2px;
+          
+            right: 200px;
+          }
+          

@@ -1,0 +1,172 @@
+# Reference: https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+
+window:
+  # Window dimensions (changes require restart)
+  dimensions:
+    columns: 250
+    lines: 200
+  # Window padding (changes require restart)
+  padding:
+    x: 2
+    y: 2
+  # Window decorations
+  decorations: full # full/none/buttonless/transparent
+  startup_mode: Maximized # Maximized/Windowed/Fullscreen
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer, 0 to disable scrolling.
+  history: 15000
+  # Number of lines the viewport will move for every line scrolled when
+  multiplier: 3
+
+font:
+  # Normal (roman) font face
+  normal:
+    #family: Droid Sans Mono
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux) monospace
+    #   - (Windows) Consolas
+    family: Fira Code
+    # The `style` can be specified to pick a specific face.
+    #style: Regular
+
+  # Bold font face
+  bold:
+    #family: Droid Sans Mono
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: monospace
+    # The `style` can be specified to pick a specific face.
+    #style: Bold
+
+  # Italic font face
+  italic:
+    #family: Droid Sans Mono
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code pro
+    # The `style` can be specified to pick a specific face.
+    #style: Italic
+
+  # Point size
+  size: 10.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: true # better for retina macos displays
+
+debug:
+  # Display the time it takes to redraw each frame.
+  render_timer: false
+
+# Use custom cursor colors. If `true`, the `colors.cursor.foreground` and
+# `colors.cursor.background` colors will be used to display the cursor.
+# Otherwise the cell colors are inverted for the cursor.
+# custom_cursor_colors: true
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+# Colors (Snazzy)
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#ffffff'
+  cursor:
+    text: '#F81CE5'
+    cursor: '#ffffff'
+
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#fe0100'
+    green: '#33ff00'
+    yellow: '#feff00'
+    blue: '#0066ff'
+    magenta: '#cc00ff'
+    cyan: '#00ffff'
+    white: '#d0d0d0'
+
+  # Bright colors
+  bright:
+    black: '#808080'
+    red: '#fe0100'
+    green: '#33ff00'
+    yellow: '#feff00'
+    blue: '#0066ff'
+    magenta: '#cc00ff'
+    cyan: '#00ffff'
+    white: '#FFFFFF'
+
+# Visual Bell
+bell:
+  animation: EaseOutExpo
+  duration: 0 # disable visual bell
+
+# Background opacity
+window:
+  opacity: 0.5
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  cursor_when_typing: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: false
+
+window.dynamic_title: true
+
+# Cursor style
+cursor:
+  style: Block # Block/Underline/Beam
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+live_config_reload: true
+
+shell:
+  program: /usr/bin/fish
+
+key_bindings:
+  - { key: V, mods: Command, action: Paste }
+  - { key: C, mods: Command, action: Copy }
+  - { key: H, mods: Command, action: Hide }
+  - { key: Q, mods: Command, action: Quit }
+  - { key: W, mods: Command, action: Quit }
+  - { key: Back, chars: "" }
+  - { key: Insert, chars: "\e[2~" }
+  - { key: Delete, chars: "\e[3~" }
+  - { key: Left, chars: "\e[D", mode: ~AppCursor }
+  - { key: Left, chars: "\eOD", mode: AppCursor }
+  - { key: Right, chars: "\e[C", mode: ~AppCursor }
+  - { key: Right, chars: "\eOC", mode: AppCursor }
+  # https://github.com/alacritty/alacritty/issues/93
+  - { key: F, mods: Alt, chars: "\ef" }
+  - { key: B, mods: Alt, chars: "\eb" }
+theme: Hyper
