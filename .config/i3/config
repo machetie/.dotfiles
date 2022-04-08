@@ -442,6 +442,8 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # TRAY APPLICATIONS
 
+exec --no-startup-id telegram-desktop -startintray 
+exec --no-startup-id discord --start-minimized
 # applications that are not installed will not start
 # you may see a wheel - hashtag out things you do not want
 
