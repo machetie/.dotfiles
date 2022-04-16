@@ -630,6 +630,7 @@ bindsym Control+Shift+P exec --no-startup-id xfce4-screenshooter
 #floating enabled from some programs - find with xprop
 
 for_window [class="Arcolinux-welcome-app.py"] floating enable
+for_window [class="Uxterm"] floating enable
 #for_window [class="Arcolinux-tweak-tool.py"] floating enable
 for_window [class="Bleachbit"] floating disable
 for_window [class="Blueberry.py"] floating enable
