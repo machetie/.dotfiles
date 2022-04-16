@@ -1,6 +1,6 @@
 alias l 'exa'
 alias ll 'exa_git'
-alias ls 'exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS'
+alias la 'exa $EXA_STANDARD_OPTIONS $EXA_LA_OPTIONS'
 alias ld 'exa $EXA_STANDARD_OPTIONS $EXA_LD_OPTIONS'
 alias lg 'exa $EXA_STANDARD_OPTIONS $EXA_LG_OPTIONS'
 alias le 'exa $EXA_STANDARD_OPTIONS $EXA_LE_OPTIONS'

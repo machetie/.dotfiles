@@ -1,4 +1,3 @@
-set -U fish_greeting ""
 
 export VISUAL="vscodium"
 export EDITOR="nano"
@@ -93,10 +92,6 @@ if status --is-login
     end
 end
 # Neofetch
-function fish_greeting
-    neofetch | lolcat
-end
-funcsave fish_greeting
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
