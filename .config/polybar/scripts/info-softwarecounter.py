@@ -52,8 +52,8 @@ guis = OrderedDict({
 # the resulting glpyh used will be that of the corresponding key
 combine_guis = {
     'terminals': ('gnome-terminal-server', 'xfce4-terminal', 'alacritty', 'termite', 'terminator', 'urxvt'),
-    'chromes': ('chromium', 'chrome'),
-    'filemanager': ('nemo', 'thunar', 'dolphin', 'nautilus', 'pcmanfm'),
+    'chromes': ('vivaldi', 'vivaldi-stable'),
+    'filemanager': ('code', 'thunar', 'dolphin', 'nautilus', 'pcmanfm'),
     'remote-desktop': ('TeamViewer', ),
     'pdfviewer': ('evince', 'okular', 'zathura'),
     'image': ('gthumb', 'shotwell', 'deepin-image-vi', 'eog', 'gimp-2.10'),
